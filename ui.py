@@ -8,9 +8,10 @@ st.set_page_config(
 
 st.title("📈 Binance Futures Trading Bot")
 st.caption(
-    "A professional paper-trading platform supporting MARKET, LIMIT & STOP-LIMIT orders. "
+    "A professional trading platform supporting MARKET, LIMIT & STOP-LIMIT orders. "
     "Built using Python, Streamlit and a modular backend architecture."
 )
+
 
 
 st.divider()
@@ -26,7 +27,7 @@ from bot.orders import (
 from bot.storage import load_orders
 
 st.set_page_config(page_title="Trading Bot UI", layout="wide")
-st.title("📊 Binance Futures Trading Bot (Simulator)")
+st.title("📊 Binance Futures Trading Bot")
 
 tab1, tab2 = st.tabs(["➕ Place Order", "📦 Order History"])
 
