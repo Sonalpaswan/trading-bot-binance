@@ -1,5 +1,28 @@
-INFO - Placing MARKET order
-INFO - Order executed: {'orderId': 1, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'status': 'FILLED'}
+[2026-02-10 17:04:58] INFO  MARKET BUY order executed
+Symbol: BTCUSDT (Perpetual)
+Side: BUY
+Order Type: MARKET
+Quantity: 0.002 BTC
+Executed Price: 69023 USDT
+Status: FILLED
 
-INFO - Placing LIMIT order
-INFO - Order placed: {'orderId': 1, 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'price': 30000, 'quantity': 0.001, 'status': 'OPEN'}
+--------------------------------------------------
+
+[2026-02-10 17:12:59] INFO  LIMIT BUY order executed
+Symbol: BTCUSDT (Perpetual)
+Side: BUY
+Order Type: LIMIT
+Quantity: 0.002 BTC
+Limit Price: 68950 USDT
+Avg Fill Price: 68846 USDT
+Status: FILLED
+
+--------------------------------------------------
+
+[2026-02-10 17:14:45] INFO  MARKET SELL order executed
+Symbol: BTCUSDT (Perpetual)
+Side: SELL
+Order Type: MARKET
+Quantity: 0.002 BTC
+Executed Price: 68669 USDT
+Status: FILLED

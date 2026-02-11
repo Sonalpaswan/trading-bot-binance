@@ -1,12 +1,14 @@
-# virtual environment
-venv/
+# Runtime files
+orders.json
+bot/orders.json
 
-# env secrets
+# Environment
+venv/
 .env
 
-# python cache
+# Archives
+bot.zip
+
+# Python cache
 __pycache__/
 *.pyc
-
-# logs allowed for submission
-# logs.txt
