@@ -1,77 +1,52 @@
 # 🚀 Binance Futures Trading Bot (Paper Trading Platform)
 
-A professional-grade **paper trading platform** for Binance Futures, built using Python with both **CLI and Web UI** support.
+A professional-grade **paper trading platform** for Binance Futures, developed using **Python**, supporting both a **Command Line Interface (CLI)** and a **Web-based UI (Streamlit)**.
+
+This project demonstrates clean architecture, modular backend design, and safe trading logic suitable for academic and internship evaluation.
 
 ---
 
 ## ✨ Key Features
-- MARKET, LIMIT & STOP-LIMIT order support
-- Command Line Interface (CLI)
-- Streamlit-based Web UI
-- Persistent order storage (JSON-based)
-- Order cancellation support
-- Structured logging for debugging & audit
-- Modular & extensible backend design
+
+- Supports **MARKET**, **LIMIT**, and **STOP-LIMIT** orders  
+- Command Line Interface (CLI) for fast execution  
+- Streamlit-based Web UI for interactive order placement  
+- Persistent order storage using JSON  
+- Order cancellation support  
+- Structured logging for debugging and audit  
+- Modular, extensible backend architecture  
 
 ---
 
-## 🔐 Risk-Free Trading & Design Decisions
+## 🔐 Risk-Free Trading & Engineering Decisions
 
-This project intentionally uses a **paper trading (simulated execution) approach** instead of live Binance trading.
+This project intentionally follows a **paper trading (simulated execution)** approach instead of live Binance trading.
 
-The objective was to:
-- Prevent any real financial risk during development and testing
-- Ensure safe experimentation with order logic
-- Follow responsible engineering practices
-- Make the project suitable for internship and academic evaluation
+### Why paper trading?
+- To **eliminate real financial risk** during development and testing  
+- To allow **safe experimentation** with trading logic  
+- To follow **responsible software engineering practices**  
+- To make the project suitable for **internship and academic submission**
 
-The system is designed so that **real exchange integration can be enabled later** without rewriting core logic.
-
----
-
-## 🗂 Project Structure
-# 🚀 Binance Futures Trading Bot (Paper Trading Platform)
-
-A professional-grade **paper trading platform** for Binance Futures, built using Python with both **CLI and Web UI** support.
-
----
-
-## ✨ Key Features
-- MARKET, LIMIT & STOP-LIMIT order support
-- Command Line Interface (CLI)
-- Streamlit-based Web UI
-- Persistent order storage (JSON-based)
-- Order cancellation support
-- Structured logging for debugging & audit
-- Modular & extensible backend design
-
----
-
-## 🔐 Risk-Free Trading & Design Decisions
-
-This project intentionally uses a **paper trading (simulated execution) approach** instead of live Binance trading.
-
-The objective was to:
-- Prevent any real financial risk during development and testing
-- Ensure safe experimentation with order logic
-- Follow responsible engineering practices
-- Make the project suitable for internship and academic evaluation
-
-The system is designed so that **real exchange integration can be enabled later** without rewriting core logic.
+⚠️ **Important Note:**  
+The architecture is designed in a way that **real Binance Futures API integration can be enabled later** with minimal changes, without rewriting the core business logic.
 
 ---
 
 ## 🗂 Project Structure
+
 trading_bot/
+│
 ├── bot/
-│ ├── cli.py # Command-line interface
-│ ├── orders.py # Order execution logic
-│ ├── simulator.py # Paper trading engine
-│ ├── storage.py # Persistent order storage
-│ ├── client.py # Exchange abstraction layer
-│ └── logging_config.py # Logging setup
-├── ui.py # Streamlit-based web UI
-├── orders.json # Stored order data
-├── logs.txt # Execution & debug logs
+│   ├── cli.py              # Command-line interface
+│   ├── orders.py           # Order execution logic
+│   ├── simulator.py        # Paper trading engine
+│   ├── storage.py          # Persistent order storage
+│   ├── client.py           # Exchange abstraction layer
+│   └── logging_config.py   # Logging configuration
+│
+├── ui.py                   # Streamlit-based web UI
+├── orders.json             # Stored order data
+├── logs.txt                # Execution and debug logs
 ├── requirements.txt
 └── README.md
