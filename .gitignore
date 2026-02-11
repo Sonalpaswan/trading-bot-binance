@@ -6,8 +6,6 @@ bot/orders.json
 venv/
 .env
 
-# Archives
-bot.zip
 
 # Python cache
 __pycache__/
